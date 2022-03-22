@@ -8,6 +8,10 @@ import java.util.Set;
 @Entity
 @Table(name = "pizzas")
 public class PizzaEntity {
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
